@@ -1,4 +1,4 @@
-git # Write your code here!
+# Write your code here!
 def game_hash
   g_hash = {
     :home => {
@@ -14,11 +14,7 @@ def game_hash
     }, 
     :away => {
       :team_name => "Charlotte Hornets",
-<<<<<<< HEAD
       :colors => ["Turquoise", "Purple"],
-=======
-      :colors => ["Black", "White"],
->>>>>>> 3744e27de5635fd7c02cb39571797bf4702b0c59
       :players => [
         {:name => "Jeff Adrien", :number => 4, :shoe => 18,:points => 10, :rebounds => 1, :assists  => 1, :steals => 2, :blocks => 7, :slam_dunks => 2},
         {:name => "Bismack Biyombo", :number => 0, :shoe => 16,:points => 12, :rebounds => 4, :assists  => 7, :steals => 22, :blocks => 15, :slam_dunks => 10},
@@ -31,7 +27,6 @@ def game_hash
 end
 
 def num_points_scored (player_name)
-<<<<<<< HEAD
   score = 0
   game_hash.each do |location, team_data| 
     team_data[:players].each do |player| 
@@ -158,13 +153,3 @@ def long_name_steals_a_ton?
   !rival
   
 end
-=======
-  game_hash.reduce do |score, (key, item)| 
-      item[:players].reduce do |dude| 
-        score = dude[:points]  if  dude[:name] === player_name 
-        dude
-      end
-      score
-  end
-end
->>>>>>> 3744e27de5635fd7c02cb39571797bf4702b0c59
